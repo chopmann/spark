@@ -2,6 +2,17 @@
 - name: Install i3
   pacman: name=i3 state=present
 
+- name: Install python-netifaces
+  pacman: name=python-netifaces
+
+- name: Install i3pystatus and dependencies.
+  pip: 
+    name: "{{ item }}"
+  with_items:
+     - i3pystatus
+     - colour
+     - basiciw
+
 - name: Install py3status
   aur: name=py3status user={{ user.name }}
   tags:
