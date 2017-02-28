@@ -19,6 +19,8 @@ aur:
         - downgrade
         - overdue
         - zplug
+        - telegram-desktop
+        - spotify
 
 ssh:
     port: 22
@@ -37,7 +39,7 @@ network:
     spoof_mac: True
     trusted_uuid:
         - a7beeca9-fdca-4ba9-bdd6-37c409517110
-        - 181e035f-ea7e-46d0-89d1-2259101c2ef4 
+        - 181e035f-ea7e-46d0-89d1-2259101c2ef4
 editors:
     - vim
 
@@ -74,7 +76,7 @@ base_packages:
     - htop
     - python-neovim
     - python-pip
-    
+    - linux-headers
 
 filesystem_packages:
     - dosfstools
