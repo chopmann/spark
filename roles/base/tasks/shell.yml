@@ -14,3 +14,12 @@
     - zsh-completions
   tags:
     - shell
+
+- name: Install Fish
+  pacman: name={{ item }} state=present
+  with_items:
+    - fish
+    - powerline
+    - powerline-fonts
+  tags:
+    - shell

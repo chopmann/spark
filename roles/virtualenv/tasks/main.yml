@@ -10,3 +10,6 @@
 
 - name: Create system environment dir
   file: path=/usr/local/env state=directory group=env mode=0775
+
+- name: Install virtualenvwrapper for Fish.
+  pip: name=virtualfish state=present
