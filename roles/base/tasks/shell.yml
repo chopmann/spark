@@ -23,3 +23,9 @@
     - powerline-fonts
   tags:
     - shell
+
+- name: Install dependencies for fish-ccat.
+  pip: name={{ item }} state=present
+  with_items:
+    - pygments
+    - pygments-style-solarized
